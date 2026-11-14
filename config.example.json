@@ -1,0 +1,18 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "mcp_port": 8828,
+    "relay_port": 8829,
+    "public_url": null
+  },
+  "glserver": {
+    "enabled": false,
+    "host": "localhost",
+    "port": 4580,
+    "access_key": "PASTE_YOUR_GLSERVER_ACCESS_KEY_HERE"
+  },
+  "lucifer": {
+    "poll_interval_ms": 500,
+    "heartbeat_timeout_sec": 15
+  }
+}

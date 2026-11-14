@@ -1,0 +1,230 @@
+====================================================================
+  LUCIFER MULTIBOT — MASTER SETTINGS & CONFIGURATION DUMP
+====================================================================
+
+====================================================================
+  1. BOT GENERAL & SAFETY TOGGLES
+====================================================================
+  * legit_mode                 : TRUE [Active]
+  * anti_fire                  : FALSE [Disabled]
+  * anti_toxic                 : FALSE [Disabled]
+  * auto_reconnect             : FALSE [Disabled]
+  * auto_leave_on_mod          : TRUE [Active]
+  * auto_leave_on_admin        : FALSE [Disabled]
+  * auto_ban                   : FALSE [Disabled]
+  * auto_accept                : FALSE [Disabled]
+  * auto_tutorial              : sol.sol::d::u<AutoTutorial>: 00000000120E6A78
+  * auto_expand_inventory      : TRUE [Active]
+  * leave_world_before_warp    : FALSE [Disabled]
+  * bypass_logon               : FALSE [Disabled]
+  * hide_gems                  : FALSE [Disabled]
+  * ignore_gems                : FALSE [Disabled]
+  * ignore_essences            : FALSE [Disabled]
+  * dynamic_delay              : FALSE [Disabled]
+
+====================================================================
+  2. BOT DELAYS & TIMING CONFIGURATIONS
+====================================================================
+  * reconnect_interval         : 14
+  * min_reconnect              : 12
+  * max_reconnect              : 18
+  * reconnect_multiplier       : FALSE [Disabled]
+  * random_reconnect           : TRUE [Active]
+  * maximum_ping               : 1800
+  * auto_rest_mode             : FALSE [Disabled]
+  * rest_time                  : 60
+  * rest_interval              : 600
+  * disconnect_on_rest         : FALSE [Disabled]
+  * move_range                 : 6
+  * move_interval              : nil (Not Set)
+
+====================================================================
+  3. COLLECTING, GEMS & TRASHING RULES
+====================================================================
+  * auto_collect               : FALSE [Disabled]
+  * collect_range              : 10
+  * collect_path_check         : FALSE [Disabled]
+  * collect_all                : TRUE [Active]
+  * object_collect_delay       : 200
+  * gem_limit                  : 1000000
+  * auto_trash                 : TRUE [Active]
+  * auto_consume               : FALSE [Disabled]
+  * consume_id                 : 0
+  * consume_interval           : 1800.0
+  * consumed_once              : nil (Not Set)
+  * active_trash_list          : Fire Essence (5024), Water Essence (5026), Earth Essence (5028), Fissure (5032), Waterfall (5034), Hidden Door (5036), Anemone (5038), Aurora (5040), Obsidian (5042), Lava Lamp (5044), Hour Glass (7162), Red House Entrance (7164)
+
+====================================================================
+  4. DEVICE EMULATION & LOGIN PROFILE
+====================================================================
+  * name                       : Berkimmm
+  * mail                       : berk.webops@gmail.com
+  * platform_id                : 0
+  * country                    : us
+  * player_age                 : 21
+  * mac                        : 5c:c1:2c:ff:34:11
+  * rid                        : 656E024E11439454D8A755CF7B895B06
+  * vid                        : 02CCEB65-0919-1F68-011D-07000B560A4F
+  * aid                        : 0197EE6E-0852-F26A-0627-2C29011620DC
+  * gid                        : 0247bd15-00b3-5f8c-0184-8e540ad473c3
+  * filter_messages            : TRUE [Active]
+  * requested_name             : 
+  * aat                        : 2
+  * wk                         : 680ECD545FCF671EFDA34B58E6706E90
+  * hash                       : -519882525
+
+====================================================================
+  5. AUTO FARM ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * id                         : 0
+  * auto_break                 : TRUE [Active]
+  * auto_place                 : TRUE [Active]
+  * auto_remote                : FALSE [Disabled]
+  * auto_retrieve              : FALSE [Disabled]
+  * mag_x                      : -1
+  * mag_y                      : -1
+  * block_storage              : 
+  * seed_storage               : 
+
+====================================================================
+  6. ROTATION ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * status                     : 0
+  * primary                    : 0
+  * secondary                  : 0
+  * pnb_world                  : 
+  * pnb_in_home                : TRUE [Active]
+  * harvest_until_level        : FALSE [Disabled]
+  * tiles                      : 896
+  * one_by_one                 : FALSE [Disabled]
+  * break_x                    : 3
+  * break_y                    : 1
+  * auto_fill                  : FALSE [Disabled]
+  * seed_drop_amount           : 100
+  * harvest_roots              : FALSE [Disabled]
+  * ignore_plant               : FALSE [Disabled]
+  * auto_exchange              : FALSE [Disabled]
+  * visit_random_worlds        : FALSE [Disabled]
+  * auto_jammer                : TRUE [Active]
+  * auto_fossil                : TRUE [Active]
+  * auto_leave_on_player       : FALSE [Disabled]
+  * suppress_pack_storage      : FALSE [Disabled]
+  * suppress_seed_storage      : FALSE [Disabled]
+  * clear_objects              : TRUE [Active]
+  * auto_rest                  : FALSE [Disabled]
+  * custom_position            : FALSE [Disabled]
+  * harvest_interval           : nil (Not Set)
+  * plant_interval             : nil (Not Set)
+  * break_interval             : nil (Not Set)
+  * warp_interval              : nil (Not Set)
+
+====================================================================
+  7. AUTO GEIGER ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * insta_path                 : TRUE [Active]
+  * use_chocolate              : FALSE [Disabled]
+  * spread                     : nil (Not Set)
+
+====================================================================
+  8. AUTO SPAM ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * messages                   : std::vector<std::string>
+  * interval                   : 4.0
+  * random_interval            : FALSE [Disabled]
+  * auto_interval              : FALSE [Disabled]
+  * use_color                  : FALSE [Disabled]
+  * show_emote                 : FALSE [Disabled]
+  * randomizer                 : FALSE [Disabled]
+
+====================================================================
+  9. AUTO FISH ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * world                      : 
+  * x                          : 0
+  * y                          : 0
+  * auto_trawler               : FALSE [Disabled]
+  * auto_drill                 : FALSE [Disabled]
+  * auto_gemonade              : FALSE [Disabled]
+  * reward_storage             : 
+  * item_storage               : 
+  * auto_trash                 : FALSE [Disabled]
+
+====================================================================
+  10. AUTO COOK ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : nil (Not Set)
+  * world                      : 
+  * x                          : 0
+  * y                          : 0
+  * interval                   : 200
+  * is_cooking                 : FALSE [Disabled]
+  * food_storage               : 
+  * ingredient_storage         : 
+
+====================================================================
+  11. AUTO PARKOUR ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * limit                      : 1
+  * block                      : 0
+  * type                       : 0
+
+====================================================================
+  12. AUTO CRIME ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * world                      : 
+  * tool_storage               : 
+  * reward_storage             : 
+  * auto_bbq                   : FALSE [Disabled]
+  * auto_wave                  : FALSE [Disabled]
+
+====================================================================
+  13. AUTO CARNIVAL ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * reward_storage             : 
+  * ticket_storage             : 
+  * selected_game              : 0
+  * auto_buy                   : FALSE [Disabled]
+  * auto_trash                 : FALSE [Disabled]
+
+====================================================================
+  14. AUTO MESSAGE ENGINE CONFIGURATION
+====================================================================
+  * enabled                    : FALSE [Disabled]
+  * interval                   : 5.0
+  * victim_uid                 : 0
+  * uid_count                  : 0
+  * growid_count               : 0
+  * ignore_admin               : FALSE [Disabled]
+  * loop_mode                  : FALSE [Disabled]
+  * auto_sb                    : FALSE [Disabled]
+  * anti_exit                  : FALSE [Disabled]
+  * type                       : 3
+
+====================================================================
+  15. PROXY MANAGER SETTINGS
+====================================================================
+  * auto_switch                : FALSE [Disabled]
+  * switch_on_ban              : FALSE [Disabled]
+  * switch_on_block            : FALSE [Disabled]
+  * switch_on_shadow           : FALSE [Disabled]
+  * cooldown                   : 1800
+  * timeout                    : 8
+  * main_ip_reference          : 1
+  * bypass_cooldown            : 15
+  * localize                   : FALSE [Disabled]
+  * spread                     : TRUE [Active]
+
+====================================================================
+  16. WORLD MANAGER SETTINGS
+====================================================================
+  * Managed Farms Count   : 0
+  * Seed Storages Count   : 0
+  * Pack Storages Count   : 0

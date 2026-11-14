@@ -1,0 +1,44 @@
+# Python cache & environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.env
+.venv/
+env/
+venv/
+.DS_Store
+
+# Local secrets & runtime state
+config.json
+*.url
+sdawsddd.url
+data/tenants.json
+data/user_quotas.json
+data/user_tenants.json
+data/learned_patterns.json
+data/*.db
+*.db
+generated_test_map.png
+scripts/
+
+# Internal / planning docs
+.agents/
+PROJECT.md
+TEST_INFRA.md
+TEST_READY.md
+
+# Private Discord Bot components (local private controller only; excluded from public MCP repo)
+discord_bot/
+run_discord_bot.py
+start.py
+assets/prometheus_*.jpg
+assets/emojis/
+tests/test_adversarial_m3.py
+tests/test_bot_features.py
+tests/test_connection_intent.py
+tests/test_emoji_and_live_deck.py
+tests/test_priority_queue.py
+tests/test_run_launcher.py
+tests/test_slug_generator.py
+tests/test_user_memory.py

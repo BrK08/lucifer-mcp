@@ -1,0 +1,64 @@
+====================================================================
+  LUCIFER V2.88 P2 — ULTIMATE IN-GAME RUNTIME DUMP (V3.0)
+====================================================================
+
+--- [INSPECTING OBJECT: world] ---
+  * world:name               : string
+  * world:getTiles           : method
+  * world:weather            : number
+  * world:getTile            : method
+  * world:tiles              : userdata
+  * world:getPlayers         : method
+  * world:players            : userdata
+  * world:y                  : number (World Height: 60)
+  * world:getObjects         : method
+  * world:x                  : number (World Width: 100)
+  * world:objects            : userdata
+  * world:getTilesSafe       : method
+  * world:hasAccess          : method (Boolean: Lock / Build rights)
+
+--- [INSPECTING OBJECT: tile] ---
+  * tile:fg                  : number (Foreground item ID)
+  * tile:bg                  : number (Background item ID)
+  * tile:x                   : number (Tile X: 0-99)
+  * tile:y                   : number (Tile Y: 0-59)
+  * tile:flags               : number (Collision & state flags)
+  * tile:canHarvest          : method (Boolean: Tree 100% ready to harvest)
+  * tile:hasExtra            : method (Boolean: Has lock, sign, tree, or door data)
+  * tile:getExtra            : method (Returns TileExtra object)
+
+--- [INSPECTING OBJECT: tile_extra] ---
+  * tile_extra:id            : number (Seed or lock item ID)
+  * tile_extra:count         : number (Stored items or fruit count)
+  * tile_extra:growth        : number (Elapsed growth time in seconds)
+  * tile_extra:flags         : number
+
+--- [INSPECTING OBJECT: player] ---
+  * player:name              : string (GrowID)
+  * player:netid             : number (Room Network ID)
+  * player:userid            : number (Growtopia numerical User ID)
+  * player:country           : string (Country code e.g. "us", "tr")
+  * player:clothes           : userdata (Equipped clothes object)
+
+--- [INSPECTING OBJECT: inventory_item] ---
+  * inventory_item:id        : number (Item ID)
+  * inventory_item:count     : number (Quantity in backpack)
+  * inventory_item:isActive  : boolean (True if currently equipped/held)
+
+--- [INSPECTING OBJECT: item_info] ---
+  * item_info:id             : number
+  * item_info:name           : string
+  * item_info:rarity         : number (Item rarity score)
+  * item_info:growth         : number (Total growth time in seconds)
+  * item_info:flags          : number
+
+--- [INSPECTING OBJECT: variantlist] ---
+  * variantlist:new          : function
+  * variantlist:get          : function
+  * variantlist:print        : function
+  * variantlist:class_check  : userdata
+  * variantlist:class_cast   : userdata
+
+--- [INSPECTING OBJECT: game_update_packet] ---
+  * game_update_packet:netid : number
+  * game_update_packet:flags : number

@@ -1,0 +1,869 @@
+==================================================================
+  LUCIFER MULTIBOT — TÜM FONKSİYON VE API DÖKÜM RAPORU (OFFLINE)
+  Oluşturan: Lucifer Deep Dumper v2.0 (mr_berk)
+==================================================================
+
+--- [1. GLOBAL FONKSİYONLAR & NESNELER] ---
+  • Adventure                      : table
+  • AutoBlarney                    : table
+  • AutoBuild                      : table
+  • AutoCarnival                   : table
+  • AutoClear                      : table
+  • AutoCombine                    : table
+  • AutoCook                       : table
+  • AutoCrime                      : table
+  • AutoEvent                      : table
+  • AutoFarm                       : table
+  • AutoFish                       : table
+  • AutoFossil                     : table
+  • AutoGeiger                     : table
+  • AutoHarvest                    : table
+  • AutoMalady                     : table
+  • AutoMessage                    : table
+  • AutoNPC                        : table
+  • AutoParkour                    : table
+  • AutoPlant                      : table
+  • AutoSetPosition                : table
+  • AutoSkin                       : table
+  • AutoSpam                       : table
+  • AutoSynth                      : table
+  • AutoTransfer                   : table
+  • AutoTutorial                   : table
+  • AutoZombie                     : table
+  • Battle                         : table
+  • Clothes                        : table
+  • Console                        : table
+  • Credentials                    : table
+  • Dialog                         : table
+  • DialogBuilder                  : table
+  • Embed                          : table
+  • EmbedAuthor                    : table
+  • EmbedField                     : table
+  • EmbedFooter                    : table
+  • GameUpdatePacket               : table
+  • Growscan                       : table
+  • HttpClient                     : table
+  • HttpResult                     : table
+  • Inventory                      : table
+  • InventoryItem                  : table
+  • ItemDescription                : table
+  • Log                            : table
+  • Lucifer                        : table
+  • MessageBox                     : table
+  • NPC                            : table
+  • NetObject                      : table
+  • PackManager                    : table
+  • PathNode                       : table
+  • Player                         : table
+  • ProxyManager                   : table
+  • RTParam                        : table
+  • RTVAR                          : table
+  • Rotation                       : table
+  • RotationStorage                : table
+  • RotationWorld                  : table
+  • Signal                         : table
+  • Socks5Proxy                    : table
+  • SwitchManager                  : table
+  • Tile                           : table
+  • TileExtra                      : table
+  • Webhook                        : table
+  • World                          : table
+  • WorldManager                   : table
+  • _G                             : table
+  • _Socks5Proxy                   : table
+  • _VERSION                       : string
+  • _executor                      : userdata
+  • addBot                         : function
+  • addDataProxy                   : function
+  • addEvent                       : function
+  • addPack                        : function
+  • addProxy                       : function
+  • addSteamBot                    : function
+  • addTokenBot                    : function
+  • addUbiBot                      : function
+  • append                         : function
+  • assert                         : function
+  • base                           : table
+  • clearConsole                   : function
+  • collectgarbage                 : function
+  • dofile                         : function
+  • error                          : function
+  • getBanRate                     : function
+  • getBot                         : function
+  • getBots                        : function
+  • getConsole                     : function
+  • getDialog                      : function
+  • getInfo                        : function
+  • getInfos                       : function
+  • getInventory                   : function
+  • getLocal                       : function
+  • getLog                         : function
+  • getLogin                       : function
+  • getNPC                         : function
+  • getNPCs                        : function
+  • getObject                      : function
+  • getObjects                     : function
+  • getPlayer                      : function
+  • getPlayers                     : function
+  • getProxies                     : function
+  • getProxyManager                : function
+  • getSwitchManager               : function
+  • getTile                        : function
+  • getTiles                       : function
+  • getTilesSafe                   : function
+  • getTrashList                   : function
+  • getUsername                    : function
+  • getWorld                       : function
+  • getWorldManager                : function
+  • getmetatable                   : function
+  • hasAccess                      : function
+  • ipairs                         : function
+  • listenEvents                   : function
+  • load                           : function
+  • loadfile                       : function
+  • next                           : function
+  • pairs                          : function
+  • pcall                          : function
+  • print                          : function
+  • rawequal                       : function
+  • rawget                         : function
+  • rawlen                         : function
+  • rawset                         : function
+  • read                           : function
+  • removeBot                      : function
+  • removeColor                    : function
+  • removeEvent                    : function
+  • removeEvents                   : function
+  • removePack                     : function
+  • removeProxy                    : function
+  • require                        : function
+  • runThread                      : function
+  • script_id                      : number
+  • select                         : function
+  • setTrashList                   : function
+  • setmetatable                   : function
+  • sleep                          : function
+  • sol.Adventure.♻              : userdata
+  • sol.AutoBlarney.♻            : userdata
+  • sol.AutoBuild.♻              : userdata
+  • sol.AutoCarnival.♻           : userdata
+  • sol.AutoClear.♻              : userdata
+  • sol.AutoCombine.♻            : userdata
+  • sol.AutoCook.♻               : userdata
+  • sol.AutoCrime.♻              : userdata
+  • sol.AutoEvent.♻              : userdata
+  • sol.AutoFarm.♻               : userdata
+  • sol.AutoFish.♻               : userdata
+  • sol.AutoFossil.♻             : userdata
+  • sol.AutoGeiger.♻             : userdata
+  • sol.AutoGeiger::Signal.♻     : userdata
+  • sol.AutoHarvest.♻            : userdata
+  • sol.AutoMalady.♻             : userdata
+  • sol.AutoMessage.♻            : userdata
+  • sol.AutoNPC.♻                : userdata
+  • sol.AutoParkour.♻            : userdata
+  • sol.AutoPlant.♻              : userdata
+  • sol.AutoSetPosition.♻        : userdata
+  • sol.AutoSkin.♻               : userdata
+  • sol.AutoSpam.♻               : userdata
+  • sol.AutoSynth.♻              : userdata
+  • sol.AutoTransfer.♻           : userdata
+  • sol.AutoTutorial.♻           : userdata
+  • sol.AutoZombie.♻             : userdata
+  • sol.BattleData.♻             : userdata
+  • sol.Console.♻                : userdata
+  • sol.Dialog.♻                 : userdata
+  • sol.DialogBuilder.♻          : userdata
+  • sol.Embed.♻                  : userdata
+  • sol.Embed::EmbedAuthor.♻     : userdata
+  • sol.Embed::EmbedFooter.♻     : userdata
+  • sol.Embed::Field.♻           : userdata
+  • sol.Growscan.♻               : userdata
+  • sol.HttpClient.♻             : userdata
+  • sol.HttpResult.♻             : userdata
+  • sol.Inventory.♻              : userdata
+  • sol.InventoryItem.♻          : userdata
+  • sol.ItemDescription.♻        : userdata
+  • sol.Log.♻                    : userdata
+  • sol.Login.♻                  : userdata
+  • sol.Lucifer.♻                : userdata
+  • sol.MessageBoxLua.♻          : userdata
+  • sol.NPC.♻                    : userdata
+  • sol.NetAvatar.♻              : userdata
+  • sol.NetAvatar::Clothes.♻     : userdata
+  • sol.NetObject.♻              : userdata
+  • sol.PackManager.♻            : userdata
+  • sol.PathNode.♻               : userdata
+  • sol.ProxyManager.♻           : userdata
+  • sol.RTPARAM.♻                : userdata
+  • sol.RTVAR.♻                  : userdata
+  • sol.Rotation.♻               : userdata
+  • sol.RotationWorld.♻          : userdata
+  • sol.Socks5Proxy.♻            : userdata
+  • sol.StorageWorld.♻           : userdata
+  • sol.SwitchManager.♻          : userdata
+  • sol.Tile.♻                   : userdata
+  • sol.TileExtra.♻              : userdata
+  • sol.UpdatePacket.♻           : userdata
+  • sol.Webhook.♻                : userdata
+  • sol.World.♻                  : userdata
+  • sol.WorldManager.♻           : userdata
+  • sol._Socks5Proxy.♻           : userdata
+  • sol.variant_t.♻              : userdata
+  • sol.variantlist_t.♻          : userdata
+  • sol.vector2_t.♻              : userdata
+  • sol.vector3_t.♻              : userdata
+  • sol.☢☢                     : userdata
+  • sol.🔩                       : function
+  • tonumber                       : function
+  • tostring                       : function
+  • type                           : function
+  • unlistenEvents                 : function
+  • variant                        : table
+  • variantlist                    : table
+  • vector2                        : table
+  • vector3                        : table
+  • warn                           : function
+  • write                          : function
+  • xpcall                         : function
+
+--- [2. ENUMLAR (ENUMERATIONS)] ---
+
+  [Enum: Action]
+    - collect                   = 1
+    - harvest                   = 4
+    - plant                     = 5
+    - hit                       = 2
+    - drop                      = 7
+    - move                      = 0
+    - trash                     = 8
+    - warp                      = 6
+    - place                     = 3
+
+  [Enum: BotStatus]
+    - location_banned           = 5
+    - offline                   = 0
+    - steam_not_linked          = 40
+    - network_restricted        = 18
+    - account_suspended         = 4
+    - sms_error                 = 44
+    - high_load                 = 24
+    - error_connecting          = 19
+    - could_not_warp            = 30
+    - server_busy               = 11
+    - logon_fail                = 20
+    - stopped                   = 27
+    - wrong_password            = 2
+    - guest_limit               = 12
+    - banwave_detected          = 43
+    - failed_captcha            = 42
+    - invalid_account           = 15
+    - solving_captcha           = 41
+    - server_issue              = 33
+    - bad_name_length           = 14
+    - version_update            = 6
+    - maintenance               = 10
+    - google_logon_fail         = 36
+    - high_ping                 = 25
+    - mod_entered               = 22
+    - getting_server_data       = 28
+    - too_many_login            = 9
+    - bypassing_server_data     = 29
+    - ubi_disabled              = 16
+    - server_overload           = 8
+    - http_block                = 13
+    - changing_subserver        = 26
+    - linking_steam             = 39
+    - steam_logon_fail          = 38
+    - retrieving_token          = 34
+    - online                    = 1
+    - bad_gateway               = 32
+    - two_factor                = 35
+    - account_restricted        = 17
+    - advanced_account_protection = 7
+    - captcha_requested         = 21
+    - player_entered            = 23
+    - bad_inventory             = 31
+    - account_banned            = 3
+
+  [Enum: Bubble]
+    - none                      = 0
+    - talk                      = 1
+    - brb                       = 2
+
+  [Enum: Event]
+    - track_packet              = 2
+    - game_message              = 4
+    - variantlist               = 0
+    - render                    = 7
+    - mod_enter                 = 6
+    - update_packet             = 1
+    - got_punched               = 5
+    - generic_text              = 3
+
+  [Enum: GeigerArea]
+    - null                      = 0
+    - red                       = 1
+    - prize                     = 5
+    - rapid                     = 4
+    - green                     = 3
+    - yellow                    = 2
+
+  [Enum: GoogleStatus]
+    - init_error                = 9
+    - recovery_required         = 15
+    - invalid_credentials       = 10
+    - redirect                  = 21
+    - missing_server            = 5
+    - idle                      = 0
+    - bad_connection            = 3
+    - bad_server                = 2
+    - invalid_challenge         = 17
+    - timeout                   = 7
+    - otp_required              = 16
+    - driver_closed             = 8
+    - invalid_key               = 4
+    - phone_required            = 14
+    - account_disabled          = 12
+    - invalid_secret            = 11
+    - processing                = 1
+    - couldnt_verify            = 18
+    - unknown_url               = 19
+    - captcha_required          = 13
+    - missing_local_server      = 6
+
+  [Enum: ImGui]
+    - Text                      = function
+
+  [Enum: Method]
+    - patch                     = 2
+    - get                       = 0
+    - delete                    = 4
+    - put                       = 3
+    - post                      = 1
+    - head                      = 5
+
+  [Enum: Platform]
+    - macos                     = 2
+    - android                   = 4
+    - apple                     = 69
+    - ios                       = 1
+    - windows                   = 0
+    - ubiconnect                = 13
+    - steam                     = 15
+
+  [Enum: Proxy]
+    - socks5                    = 3
+    - https                     = 2
+    - http                      = 1
+    - none                      = 0
+
+  [Enum: Role]
+    - startopia                 = 5
+    - cook                      = 4
+    - build                     = 1
+    - surg                      = 2
+    - farm                      = 0
+    - fish                      = 3
+
+  [Enum: RotationStatus]
+    - harvesting_trees          = 1
+    - farming_block             = 2
+    - reaching_level            = 10
+    - clearing_objects          = 9
+    - scanning_world            = 0
+    - dropping_seeds            = 4
+    - clearing_history          = 11
+    - collecting_fossils        = 8
+    - dropping_packs            = 5
+    - planting_seeds            = 3
+    - filling_seeds             = 6
+    - harvesting_roots          = 7
+    - creating_home_world       = 12
+
+  [Enum: RotationWorldStatus]
+    - toxic                     = 6
+    - invalid                   = 3
+    - none                      = 0
+    - ready                     = 2
+    - inaccessible              = 4
+    - processing                = 1
+    - burnt                     = 5
+
+  [Enum: StorageType]
+    - pack                      = 0
+    - seed                      = 1
+
+  [Enum: VariantType]
+    - string                    = 2
+    - uint32                    = 5
+    - float                     = 1
+    - component                 = 7
+    - unused                    = 0
+    - entity                    = 6
+    - vector3                   = 4
+    - int32                     = 9
+    - vector2                   = 3
+
+--- [3. BOT NESNESİ METOT VE ÖZELLİKLERİ] ---
+  • bot:activate                     [method]
+  • bot:active                       [method]
+  • bot:anti_fire                    [method]
+  • bot:anti_toxic                   [method]
+  • bot:auto_accept                  [method]
+  • bot:auto_alien_scanner           [method]
+  • bot:auto_ban                     [method]
+  • bot:auto_birth                   [method]
+  • bot:auto_blarney                 [method]
+  • bot:auto_build                   [method]
+  • bot:auto_carnival                [method]
+  • bot:auto_clear                   [method]
+  • bot:auto_clothes                 [method]
+  • bot:auto_collect                 [method]
+  • bot:auto_combine                 [method]
+  • bot:auto_consume                 [method]
+  • bot:auto_cook                    [method]
+  • bot:auto_crime                   [method]
+  • bot:auto_disconnect              [method]
+  • bot:auto_event                   [method]
+  • bot:auto_expand_inventory        [method]
+  • bot:auto_farm                    [method]
+  • bot:auto_fish                    [method]
+  • bot:auto_follow                  [method]
+  • bot:auto_fossil                  [method]
+  • bot:auto_geiger                  [method]
+  • bot:auto_harvest                 [method]
+  • bot:auto_leave_on_admin          [method]
+  • bot:auto_leave_on_mod            [method]
+  • bot:auto_malady                  [method]
+  • bot:auto_message                 [method]
+  • bot:auto_mooncake_magnificence   [method]
+  • bot:auto_npc                     [method]
+  • bot:auto_parkour                 [method]
+  • bot:auto_plant                   [method]
+  • bot:auto_reconnect               [method]
+  • bot:auto_rest_mode               [method]
+  • bot:auto_set_pos                 [method]
+  • bot:auto_skin                    [method]
+  • bot:auto_spam                    [method]
+  • bot:auto_stop                    [method]
+  • bot:auto_synth                   [method]
+  • bot:auto_transfer                [method]
+  • bot:auto_trash                   [method]
+  • bot:auto_tutorial                [method]
+  • bot:auto_wear                    [method]
+  • bot:auto_zombie                  [method]
+  • bot:birth_storage                [method]
+  • bot:buy                          [method]
+  • bot:bypass_logon                 [method]
+  • bot:class_cast                   [property (userdata)]
+  • bot:class_check                  [property (userdata)]
+  • bot:collect                      [method]
+  • bot:collectByID                  [method]
+  • bot:collectObject                [method]
+  • bot:collect_all                  [method]
+  • bot:collect_path_check           [method]
+  • bot:collect_range                [method]
+  • bot:connect                      [method]
+  • bot:consume_id                   [method]
+  • bot:consume_interval             [method]
+  • bot:custom_status                [method]
+  • bot:disconnect                   [method]
+  • bot:disconnect_on_rest           [method]
+  • bot:drop                         [method]
+  • bot:dynamic_delay                [method]
+  • bot:enter                        [method]
+  • bot:fastDrop                     [method]
+  • bot:fastTrash                    [method]
+  • bot:findOutput                   [method]
+  • bot:findPath                     [method]
+  • bot:finishRole                   [method]
+  • bot:gem_count                    [method]
+  • bot:gem_limit                    [method]
+  • bot:getActiveTime                [method]
+  • bot:getAge                       [method]
+  • bot:getCaptcha                   [method]
+  • bot:getConsole                   [method]
+  • bot:getInterval                  [method]
+  • bot:getInventory                 [method]
+  • bot:getLog                       [method]
+  • bot:getLogin                     [method]
+  • bot:getMaladyDuration            [method]
+  • bot:getPath                      [method]
+  • bot:getPing                      [method]
+  • bot:getPlaytime                  [method]
+  • bot:getProxy                     [method]
+  • bot:getRoleMission               [method]
+  • bot:getSignal                    [method]
+  • bot:getWorld                     [method]
+  • bot:google_status                [method]
+  • bot:hasToken                     [method]
+  • bot:hide_gems                    [method]
+  • bot:history                      [method]
+  • bot:hit                          [method]
+  • bot:home_world                   [method]
+  • bot:ignore_essences              [method]
+  • bot:ignore_gems                  [method]
+  • bot:index                        [method]
+  • bot:isInArea                     [method]
+  • bot:isInTile                     [method]
+  • bot:isInTutorial                 [method]
+  • bot:isInWorld                    [method]
+  • bot:isResting                    [method]
+  • bot:isRunningScript              [method]
+  • bot:isSupporter                  [method]
+  • bot:is_account_secured           [method]
+  • bot:leaveWorld                   [method]
+  • bot:leave_world_before_warp      [method]
+  • bot:legit_mode                   [method]
+  • bot:level                        [method]
+  • bot:malady                       [method]
+  • bot:max_reconnect                [method]
+  • bot:maximum_ping                 [method]
+  • bot:min_reconnect                [method]
+  • bot:moveDown                     [method]
+  • bot:moveLeft                     [method]
+  • bot:moveRight                    [method]
+  • bot:moveTile                     [method]
+  • bot:moveTo                       [method]
+  • bot:moveUp                       [method]
+  • bot:move_range                   [method]
+  • bot:move_x                       [method]
+  • bot:move_y                       [method]
+  • bot:name                         [method]
+  • bot:new                          [method]
+  • bot:object_collect_delay         [method]
+  • bot:obtained_gem_count           [method]
+  • bot:obtained_pack_count          [method]
+  • bot:pearl_count                  [method]
+  • bot:place                        [method]
+  • bot:press                        [method]
+  • bot:random_reconnect             [method]
+  • bot:reconnect_interval           [method]
+  • bot:reconnect_multiplier         [method]
+  • bot:respawn                      [method]
+  • bot:rest_interval                [method]
+  • bot:rest_time                    [method]
+  • bot:retrieve                     [method]
+  • bot:rotation                     [method]
+  • bot:runScript                    [method]
+  • bot:say                          [method]
+  • bot:selected                     [method]
+  • bot:sendPacket                   [method]
+  • bot:sendRaw                      [method]
+  • bot:setBubble                    [method]
+  • bot:setCountry                   [method]
+  • bot:setDirection                 [method]
+  • bot:setInterval                  [method]
+  • bot:setMac                       [method]
+  • bot:setPack                      [method]
+  • bot:setPlatform                  [method]
+  • bot:setRid                       [method]
+  • bot:setSkin                      [method]
+  • bot:startRole                    [method]
+  • bot:status                       [method]
+  • bot:stopRole                     [method]
+  • bot:stopScript                   [method]
+  • bot:trash                        [method]
+  • bot:unwear                       [method]
+  • bot:updateBot                    [method]
+  • bot:updateCustomBot              [method]
+  • bot:updateProxy                  [method]
+  • bot:updateToken                  [method]
+  • bot:updateTokenBot               [method]
+  • bot:updateUbiBot                 [method]
+  • bot:use                          [method]
+  • bot:warp                         [method]
+  • bot:warp_count                   [method]
+  • bot:wear                         [method]
+  • bot:wear_id                      [method]
+  • bot:wear_storage                 [method]
+  • bot:wrench                       [method]
+  • bot:wrenchPlayer                 [method]
+  • bot:x                            [method]
+  • bot:y                            [method]
+
+--- [4. OTOMASYON MOTORLARI & ALT NESNELER] ---
+
+  [Nesne: auto_carnival]
+    • reward_storage             [method]
+    • new                        [method]
+    • class_check                [property (userdata)]
+    • enabled                    [method]
+    • ticket_storage             [method]
+    • class_cast                 [property (userdata)]
+    • auto_trash                 [method]
+    • selected_game              [method]
+    • auto_buy                   [method]
+
+  [Nesne: auto_geiger]
+    • new                        [method]
+    • class_check                [property (userdata)]
+    • insta_path                 [method]
+    • addWorld                   [method]
+    • removeWorld                [method]
+    • class_cast                 [property (userdata)]
+    • use_chocolate              [method]
+    • addStorage                 [method]
+    • removeStorage              [method]
+    • enabled                    [method]
+    • spread                     [method]
+
+  [Nesne: auto_message]
+    • enabled                    [method]
+    • clear                      [method]
+    • load                       [method]
+    • message                    [method]
+    • auto_sb                    [method]
+    • new                        [method]
+    • class_check                [property (userdata)]
+    • start                      [method]
+    • victim_uid                 [method]
+    • save                       [method]
+    • messaging                  [method]
+    • interval                   [method]
+    • ignore_admin               [method]
+    • loop_mode                  [method]
+    • type                       [method]
+    • class_cast                 [property (userdata)]
+    • uid_count                  [method]
+    • anti_exit                  [method]
+    • growid_count               [method]
+
+  [Nesne: proxy]
+    • ip                         [method]
+    • class_cast                 [property (userdata)]
+    • class_check                [property (userdata)]
+    • new                        [method]
+    • username                   [method]
+    • password                   [method]
+    • port                       [method]
+
+  [Nesne: inventory]
+    • version                    [method]
+    • class_cast                 [property (userdata)]
+    • items                      [method]
+    • itemcount                  [method]
+    • getItemCount               [method]
+    • price                      [method]
+    • findItem                   [method]
+    • class_check                [property (userdata)]
+    • canCollect                 [method]
+    • slotcount                  [method]
+    • new                        [method]
+    • getItems                   [method]
+    • getItem                    [method]
+    • emptyslots                 [method]
+
+  [Nesne: auto_fish]
+    • world                      [method]
+    • getRod                     [method]
+    • enabled                    [method]
+    • getBait                    [method]
+    • auto_gemonade              [method]
+    • reward_storage             [method]
+    • new                        [method]
+    • auto_trash                 [method]
+    • setBait                    [method]
+    • setRod                     [method]
+    • auto_trawler               [method]
+    • y                          [method]
+    • auto_drill                 [method]
+    • x                          [method]
+    • item_storage               [method]
+    • class_check                [property (userdata)]
+    • class_cast                 [property (userdata)]
+
+  [Nesne: login]
+    • vid                        [method]
+    • player_age                 [method]
+    • rid                        [method]
+    • secret                     [method]
+    • filter_messages            [method]
+    • mail                       [method]
+    • country                    [method]
+    • name                       [method]
+    • new                        [method]
+    • class_check                [property (userdata)]
+    • mac                        [method]
+    • aid                        [method]
+    • platform_id                [method]
+    • class_cast                 [property (userdata)]
+    • wk                         [method]
+    • recovery                   [method]
+    • aat                        [method]
+    • requested_name             [method]
+    • gid                        [method]
+    • hash                       [method]
+
+  [Nesne: log]
+    • append                     [method]
+    • new                        [method]
+    • class_check                [property (userdata)]
+    • clear                      [method]
+    • class_cast                 [property (userdata)]
+    • content                    [method]
+
+  [Nesne: console]
+    • append                     [method]
+    • contents                   [method]
+    • class_cast                 [property (userdata)]
+    • class_check                [property (userdata)]
+    • enabled                    [method]
+    • new                        [method]
+    • clear                      [method]
+
+  [Nesne: auto_cook]
+    • world                      [method]
+    • x                          [method]
+    • class_cast                 [property (userdata)]
+    • start                      [method]
+    • setTemperature             [method]
+    • setActive                  [method]
+    • new                        [method]
+    • interval                   [method]
+    • stop                       [method]
+    • is_cooking                 [method]
+    • class_check                [property (userdata)]
+    • setFood                    [method]
+    • ingredient_storage         [method]
+    • food_storage               [method]
+    • y                          [method]
+
+  [Nesne: auto_parkour]
+    • new                        [method]
+    • class_cast                 [property (userdata)]
+    • enabled                    [method]
+    • setWebhook                 [method]
+    • setTicket                  [method]
+    • setReward                  [method]
+    • type                       [method]
+    • limit                      [method]
+    • class_check                [property (userdata)]
+    • block                      [method]
+
+  [Nesne: rotation]
+    • suppress_pack_storage      [method]
+    • clear_objects              [method]
+    • pnb_in_home                [method]
+    • enabled                    [method]
+    • suppress_seed_storage      [method]
+    • secondary                  [method]
+    • custom_position            [method]
+    • auto_rest                  [method]
+    • pnb_world                  [method]
+    • status                     [method]
+    • harvest_roots              [method]
+    • ignore_plant               [method]
+    • auto_exchange              [method]
+    • visit_random_worlds        [method]
+    • auto_fill                  [method]
+    • class_cast                 [property (userdata)]
+    • seed_drop_amount           [method]
+    • break_x                    [method]
+    • primary                    [method]
+    • tiles                      [method]
+    • one_by_one                 [method]
+    • class_check                [property (userdata)]
+    • auto_jammer                [method]
+    • new                        [method]
+    • auto_fossil                [method]
+    • auto_leave_on_player       [method]
+    • break_y                    [method]
+    • harvest_until_level        [method]
+
+  [Nesne: auto_spam]
+    • randomizer                 [method]
+    • new                        [method]
+    • use_color                  [method]
+    • class_cast                 [property (userdata)]
+    • enabled                    [method]
+    • interval                   [method]
+    • random_interval            [method]
+    • auto_interval              [method]
+    • show_emote                 [method]
+    • class_check                [property (userdata)]
+    • messages                   [method]
+
+  [Nesne: auto_farm]
+    • auto_break                 [method]
+    • class_cast                 [property (userdata)]
+    • enabled                    [method]
+    • auto_retrieve              [method]
+    • seed_storage               [method]
+    • new                        [method]
+    • class_check                [property (userdata)]
+    • mag_y                      [method]
+    • block_storage              [method]
+    • auto_remote                [method]
+    • auto_place                 [method]
+    • id                         [method]
+    • mag_x                      [method]
+    • setActive                  [method]
+
+  [Nesne: auto_crime]
+    • world                      [method]
+    • new                        [method]
+    • class_cast                 [property (userdata)]
+    • enabled                    [method]
+    • setActive                  [method]
+    • tool_storage               [method]
+    • auto_bbq                   [method]
+    • class_check                [property (userdata)]
+    • reward_storage             [method]
+    • auto_wave                  [method]
+
+--- [5. WORLD & PROXY YÖNETİCİLERİ] ---
+  [WorldManager Metotları]:
+    • wm:selectStorage              [method]
+    • wm:unselectFarm               [method]
+    • wm:worlds                     [method]
+    • wm:unselectAll                [method]
+    • wm:unselectStorage            [method]
+    • wm:selectAll                  [method]
+    • wm:addStorage                 [method]
+    • wm:filter                     [method]
+    • wm:removeStorage              [method]
+    • wm:new                        [method]
+    • wm:class_check                [property (userdata)]
+    • wm:seed_storages              [method]
+    • wm:removeFarm                 [method]
+    • wm:class_cast                 [property (userdata)]
+    • wm:pack_storages              [method]
+    • wm:reset_status               [method]
+    • wm:addFarm                    [method]
+    • wm:getRandomStorage           [method]
+    • wm:selectFarm                 [method]
+  [ProxyManager Metotları]:
+    • pm:setLimit                   [method]
+    • pm:cooldown                   [method]
+    • pm:switch_on_block            [method]
+    • pm:switch_on_ban              [method]
+    • pm:auto_switch                [method]
+    • pm:new                        [method]
+    • pm:removeProxy                [method]
+    • pm:timeout                    [method]
+    • pm:bypass_cooldown            [method]
+    • pm:class_cast                 [property (userdata)]
+    • pm:localize                   [method]
+    • pm:class_check                [property (userdata)]
+    • pm:main_ip_reference          [method]
+    • pm:proxies                    [method]
+    • pm:switch_on_shadow           [method]
+    • pm:addProxy                   [method]
+    • pm:auto_check                 [method]
+    • pm:spread                     [method]
+
+--- [6. HTTP CLIENT & AĞ FONKSİYONLARI] ---
+  • client:url                      [method]
+  • client:new                      [method]
+  • client:removeProxy              [method]
+  • client:timeout                  [method]
+  • client:setProxy                 [method]
+  • client:setMethod                [method]
+  • client:class_check              [property (userdata)]
+  • client:class_cast               [property (userdata)]
+  • client:method                   [method]
+  • client:headers                  [method]
+  • client:request                  [method]
+  • client:content                  [method]
